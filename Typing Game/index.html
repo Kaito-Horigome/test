@@ -26,7 +26,12 @@
           Clear!
         </div>
         <div class="typeFormWrapper mb-20">
-          <input v-model="typeBox" type="text" class="typeForm" autofocus />
+          <textarea
+            v-model="typeBox"
+            type="text"
+            class="typeForm"
+            autofocus
+          ></textarea>
         </div>
         <div class="gaugeWrapper mb-20">
           <div v-bind:style="styleObject" class="gauge"></div>
@@ -40,7 +45,13 @@
         data: {
           startFlg: "",
           current_question: "",
-          questions: ["apple", "banana", "chocorate", "donut", "espresso"],
+          questions: [
+            "クライアントとサーバー側の両方とも得意ですが、あえて言えばサーバー側のほうが得意です。そして、比率で言えば四対六でサーバー側のほうが得意です。",
+            "スキルシートに記入した通り、JDK１１でMySQLサーバーはコミュニティー板のバージョン8.0.29を使用しました。JSPサーブレットのバージョンはジャカルタEE10を使用しました。",
+            "JSPサーブレットプロジェクト会員、記事情報管理システムで、JavaScriptを使って、Webページやアプリケーションを介して、動的な要素や機能を作成しました。そして、jQueryを利用して、画面のイベント処理を行いました。",
+            "JSPサーブレットプロジェクト、Vue.js、Spring Boot、PHP、react.js、node.js全体で、作成した画面数は８３です。",
+            "画面側は、html、jsp、Vue.js、react.js、などのフロントエンドを作成したことがあり、サーバー側は、MVCパターンのjspサーブレットとフレーム系のSpringMVC、Spring Bootでミニプロジェクトを作成したので、フロント、バックエンドどちらでも経験があり自信があります。",
+          ],
           typeBox: "",
           current_question_counts: 0,
           question_counts: 0,
